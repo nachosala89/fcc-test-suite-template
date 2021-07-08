@@ -12,11 +12,40 @@
 
     <h1 id="title"> Microverse Form </h1>
     <p id="description"> Short Survey for Students </p>
-    <form id="survey-form">  
-        <input type="text" id="name" >
-        <input type="email" id="email" >
-        <input type="number" id="number" >
-    </form> 
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" name="number" id="number" min="18" max="80"><br>
+        <label for="dropdown" id="dropdown-label">What is your favorite language?</label>
+        <select id="dropdown" name="dropdown">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">Javascript</option>
+      </select><br>
+        <p>Which is your timezone?</p>
+        <input type="radio" name="timezone" id="america" value="america">
+        <label for="america" id="america-label">America</label><br>
+        <input type="radio" name="timezone" id="europe" value="europe">
+        <label for="europe" id="europe-label">Europe</label><br>
+
+        <p>What projects have you done?</p>
+        <input type="checkbox" name="projects" id="backend" value="backend">
+        <label for="backend">Back-end</label><br>
+        <input type="checkbox" name="projects" id="frontend" value="frontend">
+        <label for="backend">Front-end</label><br>
+        <input type="checkbox" name="projects" id="bigdata" value="bigdata">
+        <label for="backend">Big Data</label><br>
+        <input type="checkbox" name="projects" id="ai" value="ai">
+        <label for="backend">Artificial Intelligence</label><br>
+        <p>Do you have any comments?</p>
+        <textarea name="textarea" rows="8" cols="50">Write something here</textarea><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
 
     <script src="js/index.js"></script>
 </body>
